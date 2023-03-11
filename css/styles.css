@@ -909,6 +909,89 @@ textarea::placeholder {
         padding-right: 16px;
     }
 
+    /* ========== Tablet Header ========== */
+    .container-header {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-logo-header {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--basic-color);
+
+        display: block;
+        margin-right: 120px;
+        padding-top: 24px;
+        padding-bottom: 22px;
+    }
+
+    .mobile-menu-open {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .nav-link {
+        display: block;
+        padding-bottom: 22px;
+        padding-top: 24px;
+
+        color: var(--basic-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
+    .current-page::after {
+        display: block;
+        content: "";
+        height: 4px;
+        width: 100%;
+        border-radius: 2px;
+        background-color: var(--btn-hover-color);
+        margin-top: -4px;
+    }
+
+    .connection {
+        display: block;
+        margin-left: auto;
+    }
+
+    .connection-list {
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+
+    .connection-item:not(:last-child) {
+        margin-bottom: 6px;
+    }
+
+    .connection-link {
+        display: block;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: var(--secondary-color);
+    }
+
     /* ========== Tablet Hero ========== */
 
     .hero {
@@ -928,6 +1011,7 @@ textarea::placeholder {
     }
 
     .container-hero {
+        padding-top: 112px;
         padding-bottom: 108px;
         padding-left: 136px;
         padding-right: 136px;
@@ -940,7 +1024,108 @@ textarea::placeholder {
         font-size: 56px;
         line-height: 1.07;
     }
+
+    /* ========== Tablet Features ========== */
+
+    .list-features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+
+    .list-features .features-item {
+        width: 356px;
+        margin-bottom: 0;
+    }
+
+    .subtitle {
+        text-align: left;
+    }
+
+    /* ========== Tablet Features ========== */
+
+    .container-our-team {
+        padding-top: 96px;
+        padding-bottom: 104px;
+        padding-left: 108px;
+        padding-right: 108px;
+    }
+
+    .list-our-team {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 64px 24px;
+    }
+
+    .list-our-team .item-our-team {
+        margin-bottom: 0;
+    }
+
+    /* ========== Tablet Customers ========== */
+
+    .container-customers {
+        padding-left: 108px;
+        padding-right: 108px;
+    }
+
+    .list-customers {
+        gap: 72px 24px;
+    }
+
+    .link-item-customers {
+        padding: 15px 31px;
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+    }
+
+    .icon-customers {
+
+        width: 104px;
+        height: 56px;
+    }
+
+    .subscribe {
+        align-items: flex-start;
+    }
+
+    .subscribe-form {
+        flex-direction: row;
+    }
+
+    .subscribe-input {
+        margin-bottom: 0;
+        margin-right: 24px;
+        width: 264px;
+    }
+
+    /* ========== Tablet Footer ========== */
+
+    .container-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 108px;
+        padding-right: 164px;
+    }
+
+    .logo-desc {
+        align-items: flex-start;
+    }
+
+    .social-media {
+        align-items: flex-start;
+    }
+
+    /* ========== Tablet Modal ========== */
+
+    .modal-window {
+        width: 408px;
+
+        padding-left: 23px;
+        padding-right: 25px;
+    }
 }
+
 
 /* ==================== DESKTOP ==================== */
 
