@@ -373,13 +373,22 @@ screen and (min-resolution: 2dppx) {
 
 /* ========== Mobile Our Team ========== */
 
+.our-team {
+    background-color: var(--back-secondary-color);
+}
+
 .container-our-team {
     padding-top: 96px;
     padding-left: 82px;
     padding-right: 82px;
     padding-bottom: 128px;
+}
 
-    background-color: var(--back-secondary-color);
+@media screen and (max-width: 427px) {
+    .container-our-team {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 .title-our-team,
@@ -395,11 +404,19 @@ screen and (min-resolution: 2dppx) {
     text-transform: capitalize;
 }
 
+.list-our-team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .item-our-team:not(:last-child) {
     margin-bottom: 72px;
 }
 
 .item-our-team {
+
+    max-width: 264px;
     background: var(--back-basic-color);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -441,7 +458,6 @@ screen and (min-resolution: 2dppx) {
 .list-social-links-employye {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin-top: 8px;
 }
 
@@ -474,7 +490,13 @@ screen and (min-resolution: 2dppx) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 72px;
+    gap: 72px 16px;
+}
+
+@media screen and (max-width: 427px) {
+    .list-customers {
+        justify-content: center;
+    }
 }
 
 .link-item-customers {
@@ -495,9 +517,12 @@ screen and (min-resolution: 2dppx) {
 
 /* ========== Mobile Footer ========== */
 
+.footer {
+    background-color: var(--basic-color);
+}
+
 .container-footer {
     padding: 96px 15px;
-    background-color: var(--basic-color);
 }
 
 .logo-desc {
@@ -961,11 +986,8 @@ textarea::placeholder {
     .connection {
         display: block;
         margin-left: auto;
-    }
-
-    .connection-list {
-        margin-top: 24px;
-        margin-bottom: 12px;
+        padding-top: 24px;
+        padding-bottom: 12px;
     }
 
     .connection-item:not(:last-child) {
@@ -1105,6 +1127,7 @@ textarea::placeholder {
 
     .social-media {
         align-items: flex-start;
+        margin: 0;
     }
 
     /* ========== Tablet Modal ========== */
@@ -1148,6 +1171,10 @@ textarea::placeholder {
     .connection-link:hover,
     .connection-link:focus {
         color: var(--btn-hover-color);
+    }
+
+    .connection {
+        padding: 0;
     }
 
     .connection-list {
@@ -1273,6 +1300,10 @@ textarea::placeholder {
 
     /* ========== Our team ========== */
 
+    .our-team {
+        max-width: 1440px;
+    }
+
     .social-link-employye {
         transition: background-color var(--basic-transition);
     }
@@ -1310,7 +1341,7 @@ textarea::placeholder {
 
     .footer {
         background-color: var(--basic-color);
-        width: 1440px;
+        max-width: 1440px;
         margin-left: auto;
         margin-right: auto;
     }
